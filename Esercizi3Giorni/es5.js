@@ -17,11 +17,11 @@ function dati(){
         return;
     }
     else if(ateneo==["nessuna"]){
-        alert("DEVI DA METTE ER CAZZO DATENEO");
+        alert("DEVI DA METTE L' DATENEO");
         return;
     }
     else if(check==true && richieste==""){
-            alert("AOOOOO COMPILA QUA SOTTO CAZZO");
+            alert("AOOOOO COMPILA QUA SOTTO");
             return;
     } 
 }
