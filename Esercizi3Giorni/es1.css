@@ -1,0 +1,36 @@
+*{
+    /*background-color:lightskyblue;*/
+}
+
+.pino{
+    background: yellow;
+    color: black;
+}
+
+.pino8{
+    background: red;
+    color: black;
+}
+
+.pino17{
+    background: fuchsia;
+    color: black;
+}
+
+.pino67{
+    background: green;
+    color: black;
+}
+
+.bottone {
+    background-color: #e6a10d;
+    border: none;
+    color: rgb(233, 18, 18);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

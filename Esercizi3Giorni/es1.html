@@ -1,0 +1,74 @@
+<html>
+<title>I dati miei! :)</title>
+<head>
+    <link rel="stylesheet" href="./es1.css" type="text/css">
+
+<body>
+
+<h2><var class="pino">Inserisci i dati</var></h2>
+ <form>
+   
+   <label for="nome">Il tuo nome:</label><br>
+   <input type="text" id="nome" required><br>
+
+   <label for="cognome">Il tuo cognome:</label><br>
+   <input type="text" id="cognome" required><br>
+
+   <label for="matricola">Matricola:</label><br>
+   <input type="text" id="matricola" name="matricola" maxlength="7" required><br><br>
+
+   <label for="regione"><h3><var class="pino17">Inserisci la regione:</var></h3></label>
+    <select name="regione" id="regione" required><br>
+    <option></option>
+    <option value="lazio">Lazio</option>
+    <option value="lombardia">Lombardia</option>
+    <option value="liguria">Liguria</option>
+    <option value="piemonte">Piemonte</option>
+    <option value="valle">Valle D'Aosta</option>
+    <option value="friuli">Friuli</option>
+    <option value="emilia">Emilia Romagna</option>
+    <option value="abruzzo">Abruzzo</option>
+    <option value="umbria">Umbria</option>
+    <option value="marche">Marche</option>
+    <option value="campania">Campania</option>
+    <option value="molise">Molise</option>
+    <option value="puglia">Puglia</option> 
+    </select> <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" ><br>
+    <label for="telefono">Telefono:</label><br>
+    <input type="text" id="telefono" required ><br>
+
+    <h2><var class="pino8">Inserisci il tuo status:</var></h2>
+
+    <input type="radio" id="incorso" name="corso" value="incorso">
+    <label for="incorso">In Corso</label><br>
+    <input type="radio" id="fuoric" name="corso" value="fuoric">
+    <label for="fuoric">Fuori Corso</label><br>
+    <input type="radio" id="ripetente" name="corso" value="ripetente">
+    <label for="ripetente">Ripetente</label><br>
+    <input type="radio" id="PT" name="corso" value="PT">
+    <label for="PT">Part-Time</label><br>
+
+
+    <h2><var class="pino67">Inserisci una richiesta in particolare</var></h2>
+    <textarea name="name" rows="12" cols="60"></textarea>
+ <br><br>
+
+ <input type="submit" name="invia" value="invia"  class="bottone">
+ <input type="reset" name="reset" value="reset" class="bottone">
+
+ </form>
+
+
+
+</body>
+
+
+
+</head>
+
+
+
+</html>

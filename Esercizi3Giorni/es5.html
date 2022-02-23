@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <script type="text/javascript" src="es5.js"></script>
+        <body>
+        <h2>Controllo Dati</h2>
+        <form action="" method="post" name="pinco">
+        <label for="cognome">Inserisci il cognome:</label>
+        <input type="text" name="cognome" size="50" onchange="dati()"><br>
+        <label for="nome">Inserisci il nome:</label>
+        <input type="text" name="nome" size="50" onchange="dati()"><br>
+        <input type="radio" name="sesso" required>Maschio<br>
+        <input type="radio" name="sesso" required>Femmina<br>
+        <select name="ateneo" onchange="dati()">
+            <option value="nessuna">Nessuna</option>
+            <option value="Tor Vergata">Tor Vergata</option>
+            <option value="La Sapienza">La Sapienza</option>
+            <option value="Roma TRE">Roma TRE</option>
+        </select>     
+        <label for="CAP">CAP</label>
+        <input type="text" name="CAP"size="5">
+        <br>
+        <label for="SL">studente lavoratore</label>  
+        <input type="checkbox" name="SL"><br>
+        <textarea name="richieste" cols="40" rows="4"></textarea><br>
+        <input type="submit" value="Submit" onsubmit="box()"><br>
+        <input type="reset" value="Reset">
+        </form>
+        </body>
+    </head>
+</html>
+
