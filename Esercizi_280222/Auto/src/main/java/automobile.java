@@ -1,7 +1,6 @@
 //import java.util.Scanner; 
 import javax.swing.*;  
 //import javax.swing.event.*;
-
 public class automobile {
     private String modello;
     public String colore;
