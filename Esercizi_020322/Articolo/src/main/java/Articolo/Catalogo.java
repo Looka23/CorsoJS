@@ -12,7 +12,7 @@ public class Catalogo<E extends Articolo> {
          this.catalogo.add(arti);
      }
      
-         List<E> getArticoliSottoPrezzo(double prezzo){
+         List<E> getArticoliSP(double prezzo){
             List<E> articoli=new ArrayList<E>();
             Iterator<E> paua = this.catalogo.iterator();
             while(paua.hasNext()){
