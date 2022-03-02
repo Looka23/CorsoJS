@@ -2,11 +2,27 @@ package javainterface;
 public class javainterface {
     
     class liquidi{
-    public static void main(String[] args) { //interface da finire
-     claudio L1;
-     claudio L2;
-     claudio B1;
-     claudio B2;
+    public static void main(String[] args) { //errori nella definizione di l1,l2,b1,b2 //logicamente giusto
+     claudio l1,l2,b1,b2;
+     l1 = new lucio(1,"birra",1);
+     l2 = new lucio(2,"the",2);
+     b1 = new barbara(3,"the",10);
+     b2 = new barbara(4,"the",15);
+     claudio N[]= new claudio[5];
+     N[0]=l1; N[1]=l2; N[2]=b1; N[3]=b2;
+     N[4]=new barbara(5,"birra",5);
+     System.out.println("prima del filtro");
+     for(int i=0; i<N.length; i++){
+         System.out.println(N[i]);
+     }
+     System.out.println("è l1 maggiore di l2?" +l1.confronta(l2));
+     System.out.println("è b1 maggiore di b2?" +l1.confronta(b2));
+     ugo u= new ugo();
+     N=u.filtra(N, l2);
+      System.out.println("dopo il filtra");
+      for(int i=0; i<N.length; i++){
+         System.out.println(N[i]);
+     }
              }
 }
     
@@ -23,7 +39,7 @@ public class javainterface {
             return ID;
         }
 
-        @Override
+        //@Override
         public String toString() {
         String s="id:";
         s+=ID;
@@ -32,8 +48,8 @@ public class javainterface {
 
 }
     class lucio extends claudio{ //lattine
-        private final String nome;
-        private final int quantità;
+        private String nome;
+        private int quantità;
         lucio(int cod, String s, int q){
             super(cod);
             quantità=q;
@@ -44,7 +60,7 @@ public class javainterface {
         @Override
         public String toString() {
         String s;
-        s=super.toString()+"nome: "+nome+ " quo: "+quantità;
+        s=super.toString()+"nome: "+nome+ " qua: "+quantità;
         return s;
         }
         @Override
