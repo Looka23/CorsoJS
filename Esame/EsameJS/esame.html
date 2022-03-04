@@ -1,0 +1,53 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <form action="" method="post" name="Fra">
+            <label for="email">Inserisci l'email:</label>
+            <input type="text" name="email" id="email" size="22" value="" placeholder="L'email deve essere in GMAIL" required><br>
+            <label for="password">Inserisci la password:</label>
+            <input type="password" name="password" id="password" size="10" value="" ><br>
+            <label for="Cpassword">Conferma la password:</label>
+            <input type="password" name="Cpassword" id="Cpassword" size="10" value="" ><br>
+            <label for="nome">Inserisci il nome:</label>
+            <input type="text" name="nome" id="nome" size="10" value="" ><br>
+            <label for="cognome">Inserisci il cognome:</label>
+            <input type="text" name="cognome" id="cognome" size="10" value="" ><br>
+            <label for="eta">Inserisci l'età:</label>
+            <input type="text" name="eta" id="eta" size="2" value="" ><br>
+            <label for="sesso">Inserisci il sesso:</label><br>
+            <input type="radio" name="sesso" >Maschio<br>
+            <input type="radio" name="sesso" >Femmina<br>
+            <label for="sesso">Inserisci la regione:</label>
+            <select name="regione">
+                <option value="valdaosta" selected>Val d’Aosta</option>
+                <option value="piemonte">Piemonte</option>
+                <option value="liguria">Liguria</option>
+                <option value="lombardia">Lombardia</option>
+                <option value="veneto">Veneto</option>
+                <option value="trentino">Trentino Alto Adige</option>
+                <option value="friuli">Friuli Venezia-Giulia</option>
+                <option value="emilia">Emilia-Romagna</option>
+                <option value="toscana">Toscana</option>
+                <option value="marche">Marche</option>
+                <option value="umbria">Umbria</option>
+                <option value="lazio">Lazio</option>
+                <option value="abruzzo">Abruzzo</option>
+                <option value="molise">Molise</option>
+                <option value="campania">Campania</option>
+                <option value="basilicata">Basilicata</option>
+                <option value="puglia">Puglia</option>
+                <option value="calabria">Calabria</option>
+                <option value="sicilia">Sicilia</option>
+                <option value="sardegna">Sardegna</option>
+            </select><br><br>
+            <button type="button" onclick="PrimaSet('POST',UrlS)">set</button>
+            <button type="button" onclick="PrimaGet('POST',UrlG)">get</button>
+            <button type="button" onclick="PrimaUP('POST',UrlU)">up</button>
+            <button type="button" onclick="PrimaDel('POST',UrlD)">del</button>
+            <h1 id="pino"> </h1>
+            </form>
+           
+        </body>
+        <script type="text/javascript" src="esame.js"></script>
+</html>
